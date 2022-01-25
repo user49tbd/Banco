@@ -1,0 +1,14 @@
+package bank;
+
+public class Main {
+	public static void main(String []args) {
+		Cliente Carlos = new Cliente();
+		Carlos.setNome("Carlos");
+		Conta cc = new ContaC(Carlos);
+		Conta cp = new ContaP(Carlos);
+		cc.depositar(100);
+		cc.transferir(100, cp);
+		cc.imprimirE();
+		cp.imprimirE();
+	}
+}
